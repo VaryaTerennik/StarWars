@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div id="app">
+      <div class = "app-header">
+        <div class="btn-back" onclick = "fnReturnBack(event)">Back</div>
+      </div>
+      <div class= "list"></div>
+      <div class = "detail"></div>
+    </div>
+    <template id="actor-detail">
+      <div class="actor-detail">
+          <div class="header">
+            <!-- <div class="btn-back">Back</div> -->
+            <div class="title">
+              ${name}
+            </div>
+            <div class="subtitle">
+              ${birth_year}
+            </div>
+            <div class="attributes">
+              <div class="attributes-block">
+                <div class="attribute">
+                  Height: ${height}
+                </div>
+                <div class="attribute">
+                  Mass: ${mass}
+                </div>
+                <div class="attribute">
+                  Gender: ${gender}
+                </div>
+                <div class="attribute">
+                  Hair Color: ${hair_color}
+                </div>
+                <div class="attribute">
+                  Eye Color: ${eye_color}
+                </div>
+                <div class="attribute">
+                  Skin Color: ${skin_color}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="homeworld">
+            <div class="title">
+              Homeworld
+            </div>
+            <div class="attributes">
+              <div class="attributes-block">
+                Name: ${homeworld.name}
+              </div>
+              <div class="attributes-block">
+                Rotation Period: ${homeworld.rotation_period}
+              </div>
+              <div class="attributes-block">
+                Climate: ${homeworld.climate}
+              </div>
+              <div class="attributes-block">
+                Population: ${homeworld.population}
+              </div>
+            </div>
+          </div>
+          <div class="sections">
+            <div class="title">
+              Films
+            </div>
+            <div class="actor-films">
+              ${filmsList}
+            </div>
+            <div class="title">
+              Starships
+            </div>
+            <div class="actor-starships">
+              ${starshipsList}
+            </div>
+          </div>
+      </div>
+    </template>
+    <template id="starship-detail">
+      <div class="starship-detail">
+          <div class="header">
+            <!-- <div class="btn-back">Back</div> -->
+            <div class="title">
+              ${name}
+            </div>
+            <div class="subtitle">
+              ${model}
+            </div>
+            <div class="attributes">
+              <div class="attributes-block">
+                <div class="attribute">
+                  Manufacturer: ${manufacturer}
+                </div>
+                <div class="attribute">
+                  Cost: ${cost_in_credits}
+                </div>
+                <div class="attribute">
+                  Length: ${length}
+                </div>
+                <div class="attribute">
+                  Speed: ${max_atmosphering_speed}
+                </div>
+                <div class="attribute">
+                  Crew: ${crew}
+                </div>
+                <div class="attribute">
+                  Passengers: ${passengers}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sections">
+            <div class="title">
+              Films
+            </div>
+            <div class="actor-films">
+              ${filmsList}
+            </div>
+            <div class="title">
+              Pilots
+            </div>
+            <div class="actor-starships">
+              ${pilotsList}
+            </div>
+          </div>
+      </div>
+    </template>
+    <template id="film-detail">
+      <div class="film-detail">
+          <div class="header">
+            <div class="title">
+              ${title}
+            </div>
+            <div class="subtitle">
+              ${episode_id}
+            </div>
+            <div class="attributes">
+              <div class="attributes-block">
+                <div class="attribute">
+                  Director: ${director}
+                </div>
+                <div class="attribute">
+                  Producer: ${producer}
+                </div>
+                <div class="attribute">
+                  Release Date: ${release_date}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sections">
+            <div class="title">
+              Characters
+            </div>
+            <div class="actor-films">
+              ${charactersList}
+            </div>
+            <div class="title">
+              Planets
+            </div>
+            <div class="actor-starships">
+              ${planetsList}
+            </div>
+            <div class="title">
+              Starships
+            </div>
+            <div class="actor-starships">
+              ${starshipsList}
+            </div>
+          </div>
+      </div>
+    </template>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="Actor.js"></script>
+    <script type="text/javascript" src="Film.js"></script>
+    <script type="text/javascript" src="Starship.js"></script>
+    <script type="text/javascript" src="Router.js"></script>
+    <script type="text/javascript" src="Model.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
