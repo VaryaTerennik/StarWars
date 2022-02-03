@@ -20,13 +20,14 @@ html body {
   right: 20px;
 }
 
-
 .actor-row:hover {
   cursor: pointer;
   background-color: rgb(110, 151, 179);
 }
 
-.actor-detail, .starship-detail, .film-detail {
+.actor-detail,
+.starship-detail,
+.film-detail {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -37,14 +38,17 @@ html body {
   color: white;
 }
 
-
-.actors, .starships, .films {
+.actors,
+.starships,
+.films {
+  overflow-y: scroll;
   display: flex;
   justify-content: center;
   margin: auto;
-  align-items: center;
+
   height: 100%;
-  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/0918ba106240197.5f8b690b70715.jpg) no-repeat;
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/0918ba106240197.5f8b690b70715.jpg)
+    no-repeat;
 }
 
 table {
@@ -54,7 +58,8 @@ table {
   height: 500px;
   width: 800px;
   background: linear-gradient(45deg, rgba(226, 156, 211, 0.5), rgb(55, 15, 56));
-  box-shadow: 5px 5px 20px 10px rgba(56, 3, 61, 0.3), -5px -5px 20px rgba(255,255,255,0.5)
+  box-shadow: 5px 5px 20px 10px rgba(56, 3, 61, 0.3),
+    -5px -5px 20px rgba(255, 255, 255, 0.5);
 }
 
 .starships table {
@@ -149,7 +154,8 @@ table tbody {
   margin-top: 10px;
 }
 
-.actor-films, .actor-starships {
+.actor-films,
+.actor-starships {
   margin-top: 20px;
   border: 2px solid white;
   border-radius: 10px;
@@ -158,17 +164,21 @@ table tbody {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.detail-film-list-head, .detail-starships-list-head, .detail-actors-list-head {
+.detail-film-list-head,
+.detail-starships-list-head,
+.detail-actors-list-head {
   display: flex;
   justify-content: space-between;
   width: 800px;
   border: 2px solid white;
   border-radius: 10px;
   background-color: rgba(87, 98, 109, 0.6);
-  box-sizing:border-box
+  box-sizing: border-box;
 }
 
-.detail-film-list-head-cell, .detail-starships-list-head-cell, .detail-actors-list-head-cell {
+.detail-film-list-head-cell,
+.detail-starships-list-head-cell,
+.detail-actors-list-head-cell {
   display: flex;
   width: 160px;
   align-content: center;
@@ -183,14 +193,14 @@ table tbody {
   display: flex;
   justify-content: space-between;
   width: 800px;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 .detail-table-row:nth-child(even) {
   border: 2px solid white;
   border-radius: 10px;
   background-color: rgba(135, 138, 141, 0.6);
-  box-sizing:border-box
+  box-sizing: border-box;
 }
 
 .detail-table-cell {
@@ -209,8 +219,9 @@ table tbody {
   border: 2px solid white;
   border-radius: 10px;
   background-color: rgba(135, 138, 141, 0.6);
-  box-shadow: 5px 5px 20px 10px rgba(56, 3, 61, 0.3), -5px -5px 20px rgba(255,255,255,0.5);
-  box-sizing:border-box;
+  box-shadow: 5px 5px 20px 10px rgba(56, 3, 61, 0.3),
+    -5px -5px 20px rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
   padding: 10px;
 }
 
@@ -219,4 +230,3 @@ table tbody {
   background-color: rgba(135, 138, 141, 0.8);
   transition: 0.5s;
 }
-
